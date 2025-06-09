@@ -1,0 +1,82 @@
+@media (max-width:1025px) {
+  .navigation{
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .nav-left .logo{
+    padding-top: 10px;
+  }
+  .nav-left ul{
+    margin: 0 94px;
+  }
+}
+
+@media (max-width:975px) {
+  .content img{
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .year-box{
+    left: 30px;
+    top: 10px;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .year-box div{
+    margin:0 3vw;
+    text-align: center;
+    align-self: center;
+  }
+
+  .year-box h3{
+    margin-right: 4vw;
+  }
+  .home-articles h2{
+    margin-top: 75px;
+  }
+  .home-article{
+    flex-direction: column;
+  }
+  .home-article-img{
+   align-self: center;
+  }
+  .home-article-content{
+    padding:10px 20px;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: 675px) {
+  .nav-left{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  .nav-left .logo{
+    margin-bottom: 10px;
+  }
+  .nav-right{
+    margin-bottom: 15px;
+  } 
+}
+
+@media (max-width: 500px) {
+  .home-article-img img {
+    width: 50vw;
+  }
+  .content-left{
+    padding: 40px;
+  }
+  .content-left h1{
+    font-size: 30px;
+  }
+  .content-left p{
+    font-size: 15px;
+  }
+}

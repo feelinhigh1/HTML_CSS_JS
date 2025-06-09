@@ -1,0 +1,104 @@
+The animation part of your CSS code handles the rotation of the car wheels, giving the illusion that the car is moving.
+
+Breakdown of the Animation:
+
+
+1. Keyframes Definition:
+
+@keyframes wheelRotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wheelRotation: This defines the animation sequence named wheelRotation.
+100% { transform: rotate(360deg); }: This means that by the end of the animation (at 100% of its duration), the element will have rotated a full 360 degrees.
+
+Since there's no 0% defined, it starts from the default state (0 degrees rotation) and rotates to 360 degrees over the animation duration.
+
+
+
+2. Applying the Animation to the Wheels:
+
+
+.wheel1 img {
+  width: 77px;
+  position: relative;
+  top: 44px;
+  left: 47px;
+  animation: wheelRotation linear 0.6s infinite;
+}
+
+.wheel2 img {
+  width: 77px;
+  position: relative;
+  top: -36px;
+  left: 248px;
+  animation: wheelRotation linear 0.6s infinite;
+}
+
+
+animation: wheelRotation linear 0.6s infinite;
+
+wheelRotation: Refers to the keyframes animation we defined earlier.
+
+linear: Specifies the timing function. A linear timing function means the rotation happens at a constant speed without acceleration or deceleration.
+
+0.6s: This is the duration of one complete rotation (360 degrees). Each wheel completes one rotation every 0.6 seconds.
+
+infinite: This makes the animation loop endlessly, so the wheels keep spinning as long as the page is active.
+
+
+
+How It Works Together:
+
+The keyframes define how the wheels rotate (from 0° to 360°).
+
+The .wheel1 img and .wheel2 img classes apply this animation to the wheel images.
+
+Since the animation is infinite, the wheels keep rotating, simulating a moving car.
+
+If you want to adjust the speed of the wheels, you can change the 0.6s value to a faster (smaller) or slower (larger) duration.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes carMove {
+  100% {
+    transform: translateX(-500vw);
+  }
+}
+
+@keyframes carMove: This defines a new animation sequence called carMove.
+
+100% { transform: translateX(-500vw); }:
+
+At the end of the animation (100%), the element will be moved 500 viewport widths (vw) to the left.
+
+translateX(-500vw) shifts the element horizontally by 500 times the width of the viewport. Since it's negative, the movement goes leftward.
+
+
+
+Apllying the animation to the track
+
+Animation: carMove linear 13s infinite;
+
+
+carMove: Refers to the keyframes you defined for moving the car.
+
+linear: The car will move at a constant speed from start to finish, with no acceleration or deceleration.
+
+13s: The animation will take 13 seconds to complete one full movement from its starting position to translateX(-500vw).
+
+infinite: The animation will repeat endlessly, creating a loop where the car keeps moving across the screen over and over.

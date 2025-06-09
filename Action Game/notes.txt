@@ -1,0 +1,13 @@
+dx = window.getComputedStyle(dino, null).getPropertyValue('left'); 
+
+This gives the computed left value of the dino. 
+
+
+
+
+dy = window.getComputedStyle(dino,null).getPropertyValue('top'); 
+
+This gives the computed top value of the dino.
+
+
+

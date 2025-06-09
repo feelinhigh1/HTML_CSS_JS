@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+  --main-bg-color: rgb(65, 96, 108);
+  --font1: "Baloo 2", serif;
+  --font2: "Roboto", serif;
+  --font3: "Montserrat", serif;
+  --font4: "Poppins", serif;
+}
+
+
+.font1{
+  font-family: var(--font1);
+  padding: 0;
+}
+
+.font2{
+  font-family: var(--font2);
+  padding: 0;
+}
+
+.font3{
+  font-family: var(--font3);
+  padding: 0;
+}
+
+.font4{
+  font-family: var(--font4);
+  padding: 0;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.max-width-1{
+  max-width: 80vw;
+}
+
+.max-width-2{
+  max-width: 60vw;
+}
+
+.m-auto{
+  margin: auto;
+}
+
+.my-2{
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.mx-1{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.center{
+  text-align: center;
+}
+
+.btn{
+  padding: 5px 10px;
+  font-family: var(--font3);
+  border: 2px solid black;
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: white;
+  background-color: var(--main-bg-color);
+}
+
+.form-input{
+  padding: 5px 10px;
+  margin: 0 10px;
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: var(--font3);
+}
+
+h1{
+  font-family: var(--font1);
+  padding: 0;
+}
+h2{
+  font-family: var(--font1);
+  font-weight: 700;
+  padding: 0;
+}
+h3{
+  font-family: var(--font1);
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.form-box input, textarea{
+  width: 55vw;
+  padding: 2px 6px;
+  margin: 7px 0;
+  font-size: 18px;
+  font-family: var(--font1);
+  border: 2px solid var(--main-bg-color);
+  border-radius: 5px;
+}
